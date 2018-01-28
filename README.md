@@ -3,8 +3,8 @@
 This is a project to get data from [Eurostat](http://ec.europa.eu/eurostat/de/data/database).
 It is in fact a merge of two approaches, and github projects:
   
-# [r-eurostat-refugees](https://github.com/muc-fluechtlingsrat/r-eurostat-refugees) gets and processes the data R. Retrieving the data works like a breeze. Vizualising is less of a breeze. R is great, you can do truly great things. If you are an expert. 
-# [elastify-eurostat](https://github.com/muc-fluechtlingsrat/elastify-eurostat) fetches the data from another eurostat API with nodejs and pushes it to an elk stack. Once the data is there, every elastic stack fan is happy and feels at home. However, if anything breaks on the way, you create duplicates, you create gaps, and fixing this is notoriously hard on the fly, or later in elasticsearch.
+1. [r-eurostat-refugees](https://github.com/muc-fluechtlingsrat/r-eurostat-refugees) gets and processes the data R. Retrieving the data works like a breeze. Vizualising is less of a breeze. R is great, you can do truly great things. If you are an expert. 
+1. [elastify-eurostat](https://github.com/muc-fluechtlingsrat/elastify-eurostat) fetches the data from another eurostat API with nodejs and pushes it to an elk stack. Once the data is there, every elastic stack fan is happy and feels at home. However, if anything breaks on the way, you create duplicates, you create gaps, and fixing this is notoriously hard on the fly, or later in elasticsearch.
 
 This time, everything will be smooth. 
 
