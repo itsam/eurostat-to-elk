@@ -71,6 +71,12 @@ https://www.elastic.co/guide/en/logstash/current/installing-logstash.html
 
 For example, on a fresh Ubuntu 16 machine, follow [logstash_install_ubuntu16.md](./logstash_install_ubuntu16.md).
 
+### Prepare elasticsearch
+
+Prepare elasticsearch - else it will have trouble recognizing your year as a date:
+`PUT eurostat-migr_asyappctza/_mapping/doc -d@ migr_asyappctza_unpivot_template.json`
+[migr_asyappctza_unpivot_template.json](./migr_asyappctza_unpivot_template.json)
+
 ### Configure logstash
 
 grab the coordinates of your source csv and the target elasticsearch. If your cluster is protected by Shield, follow https://www.elastic.co/guide/en/logstash/6.1/ls-security.html#ls-http-auth-basic .
