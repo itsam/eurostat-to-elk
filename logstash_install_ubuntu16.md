@@ -53,6 +53,8 @@ To test locally, put this into a file in /etc/logstash/conf.d/
 >     }
 > }
 
-start the service, and, with a little patience, wait for the output file to appear. If it doesn't, check the logs.
+Start the service, and, with a little patience, wait for the output file to appear. If it doesn't, check the logs.
+This isn't good enough for elasticsearch, though - the integers will arrive as strings in your index. Also, I recommend cutting the header and giving the column names explicitly. See our logstash configuration examples.
+
 
 
